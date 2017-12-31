@@ -1,0 +1,2 @@
+# Welcome to the NarwhalSimulator repo!
+This is the Github page for Narwhal Simulator. You can play the latest release at [https://jaboc.tech/NarwhalSimulator/index.html ](https://jaboc.tech/NarwhalSimulator/index.html ) (Keep in mind that this is not the latest Github version) or you can watch me develop it here. You can also contribute if you want to! Thanks, and send all feedback and stuff to jaboc@jaboc.tech
