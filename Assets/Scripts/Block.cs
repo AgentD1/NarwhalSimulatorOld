@@ -22,18 +22,25 @@ public class Block : MonoBehaviour {
             health -= col.rigidbody.velocity.magnitude;
         }
         if (health <= 0) {
-            Destroy(transform.GetChild(0).gameObject);
             Destroy(gameObject);
             col.gameObject.GetComponent<Player>().score += originalHealth * scoreMultiplier;
         } else {
-            if (transform.GetChild(0).GetComponent<SpriteRenderer>() == null) {
-                transform.GetChild(0).gameObject.AddComponent<SpriteRenderer>();
+            if(transform.childCount == 0 || transform.Find("CracksDisplay") == null) {
+                GameObject go = new GameObject();
+                go.transform.parent = transform;
+                go.transform.position = transform.position - Vector3.forward;
+                go.transform.rotation = transform.rotation;
+                go.transform.localScale = new Vector3(1, 1, 1);
+                go.name = "CracksDisplay";
+            }
+            if (transform.Find("CracksDisplay").GetComponent<SpriteRenderer>() == null) {
+                transform.Find("CracksDisplay").gameObject.AddComponent<SpriteRenderer>();
                 
             }
         }
         for (int i = 0; i < breakTextures.GetLength(0); i++) {
             if (1 - (health / originalHealth) <= ((originalHealth / breakTextures.GetLength(0)) / originalHealth) * i) {
-                transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = breakTextures[i];
+                transform.Find("CracksDisplay").GetComponent<SpriteRenderer>().sprite = breakTextures[i];
                 break;
             }
         }

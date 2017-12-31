@@ -25,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15.96}
-  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12, y: 13, z: 3.5299997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -48,14 +48,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &11402436
 MonoBehaviour:
@@ -70,8 +70,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   scoreMultiplier: 1
-  playerParticleColor: {r: 0, g: 0, b: 0, a: 0}
-  breakTextures: []
+  playerParticleColor: {r: 0.478, g: 1, b: 1, a: 1}
+  breakTextures:
+  - {fileID: 21300000, guid: 1e605fd7194d6ec4787b9e246e0404be, type: 3}
+  - {fileID: 21300000, guid: 1e605fd7194d6ec4787b9e246e0404be, type: 3}
+  - {fileID: 21300000, guid: 5768c34e405b6a74fa26627bf6419734, type: 3}
+  - {fileID: 21300000, guid: ce388472a4603764495bac225d9c5077, type: 3}
+  - {fileID: 21300000, guid: bc4ba303a507719498ef628cee496252, type: 3}
 --- !u!212 &21250710
 SpriteRenderer:
   m_ObjectHideFlags: 1
