@@ -24,6 +24,9 @@ GameObject:
   - component: {fileID: 58000010749847804}
   - component: {fileID: 114000011516339178}
   - component: {fileID: 114000013263636276}
+  - component: {fileID: 114666979767145836}
+  - component: {fileID: 114505922706215606}
+  - component: {fileID: 114585259487078192}
   m_Layer: 8
   m_Name: Fish
   m_TagString: Fish
@@ -85,7 +88,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013202741758}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ce75e5cc21bf654aa077c061104ddf0, type: 3}
   m_Name: 
@@ -118,6 +121,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rainbowRotationRate: 0.001
+--- !u!114 &114505922706215606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013202741758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9255b794ebfbc8b40b11adfffcf8e10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToScare: 8
+  distanceToUnscare: 12
+--- !u!114 &114585259487078192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013202741758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e2417c6e9ffb6a45877365b8c9a89ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 5
+  angleGoal: 0
+--- !u!114 &114666979767145836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013202741758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2933890f7e58fb5419f6a8f518eccea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalType: Fish
+  turn: 0
+  turnSpeed: 0
+  moveSpeed: 2
+  rotateInDirection: 1
 --- !u!212 &212000014156414176
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -131,6 +176,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:

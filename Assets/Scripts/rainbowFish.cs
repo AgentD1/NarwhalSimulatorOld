@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class rainbowFish : MonoBehaviour {
+public class RainbowFish : MonoBehaviour {
 
     private SpriteRenderer spr;
     private Color col;

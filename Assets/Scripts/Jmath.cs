@@ -2,29 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Jmath {
+public static class JMath {
     
     public static float RoundToNearest(float numToRound, float roundTo) {
         return Mathf.Ceil(numToRound / roundTo) / roundTo;
-    }
-
-	// found this on the internet somewhere probably goes with highscore getter on the unite page
-    public static string Md5Sum(string strToEncrypt) {
-        System.Text.UTF8Encoding ue = new System.Text.UTF8Encoding();
-        byte[] bytes = ue.GetBytes(strToEncrypt);
-
-        // encrypt bytes
-        System.Security.Cryptography.MD5CryptoServiceProvider md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
-        byte[] hashBytes = md5.ComputeHash(bytes);
-
-        // Convert the encrypted bytes back to a string (base 16)
-        string hashString = "";
-
-        for (int i = 0; i < hashBytes.Length; i++) {
-            hashString += System.Convert.ToString(hashBytes[i], 16).PadLeft(2, '0');
-        }
-
-        return hashString.PadLeft(32, '0');
     }
 
 	public static Vector3 Average (Vector3[] vectors) {
@@ -52,4 +33,12 @@ public static class Jmath {
 		}
 		return i / floats.Length;
 	}
+
+    public static Vector2 RadianToVector2(float radian) {
+        return new Vector2(Mathf.Cos(radian), Mathf.Sin(radian));
+    }
+
+    public static Vector2 DegreeToVector2(float degree) {
+        return RadianToVector2(degree * Mathf.Deg2Rad);
+    }
 }

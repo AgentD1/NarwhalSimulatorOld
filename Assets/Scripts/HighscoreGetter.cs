@@ -10,9 +10,9 @@ public class HighscoreGetter : MonoBehaviour {
     void Start() {
         StartCoroutine(GetScores());
     }
-    
+    /*
     IEnumerator PostScores(string name, int score) {
-        string hash = Jmath.Md5Sum(name + score + secretKey);
+        string hash = "yeet";
 
         string post_url = addScoreURL + "name=" + WWW.EscapeURL(name) + "&score=" + score + "&hash=" + hash;
         
@@ -23,9 +23,9 @@ public class HighscoreGetter : MonoBehaviour {
             print("There was an error posting the high score: " + hs_post.error);
         }
     }
-
+    */
     IEnumerator GetScores() {
-        GetComponent<Text>().text = "Loading Scores";
+        /*GetComponent<Text>().text = "Loading Scores";
         WWW hs_get = new WWW(highscoreURL);
         yield return hs_get;
 
@@ -35,5 +35,7 @@ public class HighscoreGetter : MonoBehaviour {
         else {
             GetComponent<Text>().text = hs_get.text;
         }
+        */
+        yield return null;
     }
 }

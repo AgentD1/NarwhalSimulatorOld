@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class spawner : MonoBehaviour {
+public class Spawner : MonoBehaviour {
     
     public GameObject thingToSpawn;
     public int spawnInterval;
