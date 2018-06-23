@@ -29,6 +29,8 @@ public class AnimalFlock : MonoBehaviour {
         Cohesion();
         Seperation();
         Alignment();
+        
+        fishNearby = null;
     }
 
     void Cohesion() {

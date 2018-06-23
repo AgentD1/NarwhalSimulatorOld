@@ -9,7 +9,7 @@ public class AnimalRunFromPlayer : MonoBehaviour {
     public float distanceToScare;
     public float distanceToUnscare;
 
-    bool isScared = false;
+    public bool isScared = false;
 
     void Start() {
         player = GameObject.FindWithTag("Player").transform;
