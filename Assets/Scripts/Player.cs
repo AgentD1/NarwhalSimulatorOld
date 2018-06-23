@@ -49,6 +49,8 @@ public class Player : MonoBehaviour {
         if (Input.GetKey(KeyCode.R)) {
             transform.position = Vector2.zero;
         }
+
+        GetComponent<Animator>().SetFloat("SwimSpeed", myRigidBody.velocity.magnitude);
     }
 
 	public void ParticleEmit(Color color, int amountToEmit){

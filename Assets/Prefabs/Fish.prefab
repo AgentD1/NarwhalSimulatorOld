@@ -22,11 +22,12 @@ GameObject:
   - component: {fileID: 212000014156414176}
   - component: {fileID: 50000013133129446}
   - component: {fileID: 58000010749847804}
-  - component: {fileID: 114000011516339178}
   - component: {fileID: 114000013263636276}
   - component: {fileID: 114666979767145836}
   - component: {fileID: 114505922706215606}
   - component: {fileID: 114585259487078192}
+  - component: {fileID: 114492445534018942}
+  - component: {fileID: 114353269318660594}
   m_Layer: 8
   m_Name: Fish
   m_TagString: Fish
@@ -82,33 +83,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.18
---- !u!114 &114000011516339178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013202741758}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce75e5cc21bf654aa077c061104ddf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  state: 0
-  player: {fileID: 0}
-  distanceToBecomeScared: 8
-  distanceToStopBeingScared: 12
-  health: 1
-  scoreFromKill: 5
-  colorParticlesKill: {r: 1, g: 0, b: 0, a: 1}
-  closeTo: 15
-  neighborhoodSize: 7.05
-  cohesionForce: 3
-  moveSpeed: 2
-  scaredMoveSpeed: 4
-  seperationDist: 1
-  seperationForce: 6
-  rotationSpeed: 5
-  randomRotation: 30
 --- !u!114 &114000013263636276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,6 +95,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rainbowRotationRate: 0.001
+--- !u!114 &114353269318660594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013202741758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2fd9f4f3a052c4e897e55f437e04b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seperationDistance: 1
+  seperationForce: 5
+  cohesionDistance: 10
+  cohesionForce: 2
+  alignmentForce: 2
+--- !u!114 &114492445534018942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013202741758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce75e5cc21bf654aa077c061104ddf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  health: 1
+  scoreFromKill: 5
+  colorParticlesKill: {r: 1, g: 0, b: 0, a: 1}
+  particleAmount: 50
 --- !u!114 &114505922706215606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 5
-  angleGoal: 0
+  goingLeft: 0
+  chanceOfChangeDirection: 60
 --- !u!114 &114666979767145836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -160,7 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalType: Fish
   turn: 0
-  turnSpeed: 0
+  turnSpeed: 4
   moveSpeed: 2
   rotateInDirection: 1
 --- !u!212 &212000014156414176
