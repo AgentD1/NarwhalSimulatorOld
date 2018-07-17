@@ -45,6 +45,10 @@ public class Block : MonoBehaviour {
             }
         }
 
+        if(transform.Find("CracksDisplay").GetComponent<SpriteRenderer>().sprite == null) {
+            transform.Find("CracksDisplay").GetComponent<SpriteRenderer>().sprite = breakTextures[breakTextures.Length - 1];
+        }
+
         /*col.gameObject.GetComponent<Player>().particles.transform.position = col.contacts[0].point;
         col.gameObject.GetComponent<Player>().particles.startColor = playerParticleColor;
         col.gameObject.GetComponent<Player>().particles.Emit(Mathf.RoundToInt(col.rigidbody.velocity.magnitude*50));
