@@ -7,6 +7,7 @@ public class Block : MonoBehaviour {
     public float scoreMultiplier = 1f;
     public Color playerParticleColor;
     public Sprite[] breakTextures;
+
     void Start() {
         if (health <= 0) {
             Debug.LogError("Block health cannot be less than or equal to 0 on start! Setting to 1. ID: " + GetInstanceID());
@@ -15,15 +16,21 @@ public class Block : MonoBehaviour {
         originalHealth = health;
     }
     public void OnCollisionEnter2D(Collision2D col) {
-        if (col.collider == null || col.collider.sharedMaterial == null || col.collider.sharedMaterial.name != "Horn") return;
+        if (col.collider == null || col.collider.sharedMaterial == null || col.collider.sharedMaterial.name != "Horn" || col.transform.GetComponent<Player>() == null) return;
         if (col.rigidbody.velocity.magnitude < 0) {
             health += col.rigidbody.velocity.magnitude;
         } else {
             health -= col.rigidbody.velocity.magnitude;
         }
+
+
+        col.transform.GetComponent<Player>().ParticleEmit(playerParticleColor, Mathf.RoundToInt(col.rigidbody.velocity.magnitude * 50));
+
+
         if (health <= 0) {
             Destroy(gameObject);
             col.gameObject.GetComponent<Player>().score += originalHealth * scoreMultiplier;
+            return;
         } else {
             if(transform.childCount == 0 || transform.Find("CracksDisplay") == null) {
                 GameObject go = new GameObject();
@@ -38,6 +45,7 @@ public class Block : MonoBehaviour {
                 
             }
         }
+
         for (int i = 0; i < breakTextures.GetLength(0); i++) {
             if (1 - (health / originalHealth) <= ((originalHealth / breakTextures.GetLength(0)) / originalHealth) * i) {
                 transform.Find("CracksDisplay").GetComponent<SpriteRenderer>().sprite = breakTextures[i];
@@ -53,6 +61,5 @@ public class Block : MonoBehaviour {
         col.gameObject.GetComponent<Player>().particles.startColor = playerParticleColor;
         col.gameObject.GetComponent<Player>().particles.Emit(Mathf.RoundToInt(col.rigidbody.velocity.magnitude*50));
         */
-		col.gameObject.GetComponent<Player>().ParticleEmit(playerParticleColor, Mathf.RoundToInt (col.rigidbody.velocity.magnitude * 50));
     }
 }
