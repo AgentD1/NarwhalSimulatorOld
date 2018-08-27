@@ -17,10 +17,20 @@ public class Block : MonoBehaviour {
     }
     public void OnCollisionEnter2D(Collision2D col) {
         if (col.collider == null || col.collider.sharedMaterial == null || col.collider.sharedMaterial.name != "Horn" || col.transform.GetComponent<Player>() == null) return;
-        if (col.rigidbody.velocity.magnitude < 0) {
-            health += col.rigidbody.velocity.magnitude;
+
+        float hornDamageMultiplier;
+
+        if (col.collider.gameObject.GetComponent<IDamageValue>() != null) {
+            hornDamageMultiplier = col.collider.gameObject.GetComponent<IDamageValue>().Damage;
         } else {
-            health -= col.rigidbody.velocity.magnitude;
+            Debug.LogWarning("Horn doesn't have an IDamageValue on it! defaulting to 1...");
+            hornDamageMultiplier = 1;
+        }
+
+        if (col.rigidbody.velocity.magnitude < 0) {
+            health += col.rigidbody.velocity.magnitude * hornDamageMultiplier;
+        } else {
+            health -= col.rigidbody.velocity.magnitude * hornDamageMultiplier;
         }
 
 

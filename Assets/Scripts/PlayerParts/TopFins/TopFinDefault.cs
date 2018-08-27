@@ -28,13 +28,17 @@ public class TopFinDefault : MonoBehaviour {
         StartCoroutine(LateStart(0.1f));
     }
 
+    public void OnDestroy() {
+        accelerationBackFin.MovementAcceleration = originalAcceleration;
+        moveBackFin.MovementSpeed = originalSpeed;
+    }
+
     public void FixedUpdate() {
         if (!isInitialized) {
             return;
         }
 
         if (isCharging) {
-            Debug.Log("Charging... " + Time.timeScale);
             if (charge > 0 && Input.GetKey(KeyCode.LeftShift)) {                                        // if charging
                 charge = Mathf.Clamp(charge - (Time.fixedDeltaTime * chargeUseRate), 0, chargeTime);
                 chargeSlider.value = charge / chargeTime;
@@ -62,8 +66,8 @@ public class TopFinDefault : MonoBehaviour {
     IEnumerator LateStart(float n) {
         yield return new WaitForSeconds(n);
 
-
-        backFin = transform.parent.Find("BackFin").GetComponent("IMovementSpeedModifiable");
+        backFin = transform.parent.GetComponent<Player>().bodyParts["Back Fin"].GetComponent("IMovementSpeedModifiable");
+        //backFin = transform.parent.Find("BackFin").GetComponent("IMovementSpeedModifiable");
 
         if (backFin is IMovementAccelerationModifiable) {
             accelerationBackFin = backFin as IMovementAccelerationModifiable;
@@ -84,6 +88,8 @@ public class TopFinDefault : MonoBehaviour {
             }
 
         }
+
+        chargeSlider = GameObject.Find("Canvas").transform.Find("GameUI").Find("ChargeSlider").GetComponent<Slider>();
 
         isInitialized = true;
     }

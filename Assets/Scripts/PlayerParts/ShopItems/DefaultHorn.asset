@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688306597154fe34b885d4a68a1fde7a, type: 3}
+  m_Name: DefaultHorn
+  m_EditorClassIdentifier: 
+  itemName: Default Horn
+  briefDescription: A basic narwhal horn.
+  longDescription: A basic narwhal horn that you start with by default. Low damage.
+  shopThumbnail: {fileID: 21300000, guid: 3f6118e06e5e890478e68523f6ed878c, type: 3}
+  shopImage: {fileID: 21300000, guid: 3f6118e06e5e890478e68523f6ed878c, type: 3}
+  prefab: {fileID: 1226981361626398, guid: 7ac53f60c821db6438d4830482bd86a6, type: 2}
+  itemType: Horn
+  cost: 0

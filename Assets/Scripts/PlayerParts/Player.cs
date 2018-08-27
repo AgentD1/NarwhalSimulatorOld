@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour {
     public Slider chargeSlider;
     */
 
+    public Dictionary<string, GameObject> bodyParts;
+
     public float score;
     public Text text;
     public ParticleSystem particles;
@@ -31,11 +34,28 @@ public class Player : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //myRigidBody = GetComponent<Rigidbody2D>();
-        particles = GameObject.Find("PlayerParticleEmitter").GetComponent<ParticleSystem>();
+
         score = 0;
+        bodyParts = new Dictionary<string, GameObject>();
+
+        ShopController sc = GameObject.FindObjectOfType<ShopController>();
+
+        sc.GiveItem("Default Horn");
+        sc.GiveItem("Default Back Fin");
+        sc.GiveItem("Default Top Fin");
+        sc.GiveItem("Default Side Fins");
+        sc.GiveItem("Default Body");
+
+        sc.EquipItemToPlayer("Default Horn");
+        sc.EquipItemToPlayer("Default Back Fin");
+        sc.EquipItemToPlayer("Default Top Fin");
+        sc.EquipItemToPlayer("Default Side Fins");
+        sc.EquipItemToPlayer("Default Body");
+
+        Debug.Log(bodyParts["Horn"].name);
         //originalSpeed = movementSpeed;
         //originalAcceleration = movementAcceleration;
-	}
+    }
 
     // Update is called once per frame
     void FixedUpdate() {        
@@ -71,6 +91,8 @@ public class Player : MonoBehaviour {
     }
 
 	public void ParticleEmit(Color color, int amountToEmit){
+        particles = GameObject.Find("PlayerParticleEmitter").GetComponent<ParticleSystem>();
+
         ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams {
             startColor = color,
             position = particles.transform.position,

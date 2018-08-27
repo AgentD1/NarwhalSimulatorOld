@@ -11,6 +11,7 @@ public class Controller : MonoBehaviour {
     public Slider musicVolSlider;
     public GameObject pauseMenuRoot;
     public Camera blurCamera;
+    public GameObject ShopUI;
 
     private void Start() {
         if (blurCamera == null) {
@@ -20,7 +21,9 @@ public class Controller : MonoBehaviour {
     // TODO: Change this when I have a wifi connection into something like add listener for slider's on value changed function.
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            TogglePauseState();
+            if (!ShopUI.activeSelf) {
+                TogglePauseState();
+            }
         }
         OnMusicVolumeChange();
     }
@@ -32,13 +35,24 @@ public class Controller : MonoBehaviour {
     public void QuitButtonPressed() {
         Application.Quit();
     }
+
     public void ResetButtonPressed() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    void OnMusicVolumeChange() {
-        master.SetFloat("musicVol", (musicVolSlider.value*100)-80);
+    public void ShopButtonPressed() {
+        ShopUI.SetActive(true);
+        GameObject.Find("PauseUI").SetActive(false);
     }
+
+    void OnMusicVolumeChange() {
+        if (musicVolSlider.value == 0) {
+            master.SetFloat("musicVol", -80);
+        } else {
+            master.SetFloat("musicVol", Mathf.Log(musicVolSlider.value) * 20);
+        }
+    }
+
     void TogglePauseState() {
         pauseMenuRoot.SetActive(!pauseMenuRoot.activeSelf);
         blurCamera.GetComponent<BoxBlur>().enabled = pauseMenuRoot.activeSelf;
