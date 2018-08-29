@@ -21,9 +21,9 @@ public class AnimalTurnRandomly : MonoBehaviour {
         }
 
         if (goingLeft) {
-            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle - turnSpeed), 1f, WeightedDirectionType.DEFAULT);
+            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle - turnSpeed), turnSpeed, WeightedDirectionType.DEFAULT);
         } else {
-            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle + turnSpeed), 1f, WeightedDirectionType.DEFAULT);
+            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle + turnSpeed), turnSpeed, WeightedDirectionType.DEFAULT);
         }
         GetComponent<Animal>().desiredDirections.Add(wd);
     }

@@ -64,7 +64,7 @@ public class Animal : MonoBehaviour {
         float currentAngle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
         float wantedAngle = Mathf.Atan2(endDir.y, endDir.x) * Mathf.Rad2Deg;
         float angle = Mathf.MoveTowardsAngle(currentAngle, wantedAngle, turnSpeed);
-
+        
         rb.velocity = JMath.DegreeToVector2(angle) * moveSpeed;
 
         transform.rotation = Quaternion.AngleAxis(angle + 180, Vector3.forward);
