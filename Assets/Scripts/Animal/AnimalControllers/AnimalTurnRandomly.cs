@@ -13,17 +13,16 @@ public class AnimalTurnRandomly : MonoBehaviour {
     }
 
     public void CalculateWeightedDirection() {
-        float currentAngle = transform.rotation.eulerAngles.z;
+        float currentAngle = transform.rotation.eulerAngles.z - 180;
         WeightedDirection wd;
 
         if(Mathf.CeilToInt(Random.Range(0f,chanceOfChangeDirection)) == chanceOfChangeDirection) {
             goingLeft = !goingLeft;
         }
-
         if (goingLeft) {
-            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle - turnSpeed), turnSpeed, WeightedDirectionType.DEFAULT);
+            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle - turnSpeed).normalized, 1f, WeightedDirectionType.DEFAULT);
         } else {
-            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle + turnSpeed), turnSpeed, WeightedDirectionType.DEFAULT);
+            wd = new WeightedDirection(JMath.DegreeToVector2(currentAngle + turnSpeed).normalized, 1f, WeightedDirectionType.DEFAULT);
         }
         GetComponent<Animal>().desiredDirections.Add(wd);
     }

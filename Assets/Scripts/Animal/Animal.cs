@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour {
+public class Animal : MonoBehaviour, IAnimalHealth {
 
     Rigidbody2D rb;
+    
+    public float Health { get; set; }
 
     static public Dictionary<string, List<Animal>> animalsByType;
 
