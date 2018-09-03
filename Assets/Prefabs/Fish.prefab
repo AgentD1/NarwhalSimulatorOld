@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114585259487078192}
   - component: {fileID: 114492445534018942}
   - component: {fileID: 114353269318660594}
+  - component: {fileID: 114758482388865262}
   m_Layer: 8
   m_Name: Fish
   m_TagString: Fish
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2417c6e9ffb6a45877365b8c9a89ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnSpeed: 5
+  turnSpeed: 1
   goingLeft: 0
   chanceOfChangeDirection: 60
 --- !u!114 &114666979767145836
@@ -166,12 +167,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2933890f7e58fb5419f6a8f518eccea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthForInspector: 1
   animalType: Fish
   turn: 0
   turnSpeed: 4
   moveSpeed: 2
   rotateInDirection: 1
   desiredDirections: []
+  player: {fileID: 0}
+  scoreFromKill: 0
+  colorParticlesKill: {r: 0, g: 0, b: 0, a: 0}
+  particleAmount: 50
+--- !u!114 &114758482388865262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013202741758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6784ae2e87b14524db501a2b2c8de269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToScare: 5
+  distanceToUnscare: 7
+  isScared: 0
+  animalTypesScaredOf:
+  - Shork
 --- !u!212 &212000014156414176
 SpriteRenderer:
   m_ObjectHideFlags: 1

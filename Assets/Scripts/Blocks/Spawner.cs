@@ -37,10 +37,10 @@ public class Spawner : MonoBehaviour {
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
                 GameObject longest = spawnedGameObjects[0];
                 float longestDistance = 0;
+                List<GameObject> gosToRemove = new List<GameObject>();
                 foreach (GameObject go in spawnedGameObjects) {
                     if(go == null) {
-                        spawnedGameObjects.Remove(go);
-                        Destroy(go);
+                        gosToRemove.Add(go);
                         continue;
                     }
                     if (longest == null) {
@@ -52,6 +52,11 @@ public class Spawner : MonoBehaviour {
                             longestDistance = Vector2.Distance(go.transform.position, player.transform.position);
                         }
                     }
+                }
+
+                foreach(GameObject go in gosToRemove) {
+                    spawnedGameObjects.Remove(go);
+                    Destroy(go);
                 }
 
                 spawnedGameObjects.Remove(longest);

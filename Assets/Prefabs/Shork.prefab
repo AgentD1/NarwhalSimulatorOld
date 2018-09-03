@@ -22,10 +22,10 @@ GameObject:
   - component: {fileID: 212754333005759366}
   - component: {fileID: 70167529370655866}
   - component: {fileID: 50189191815532498}
-  - component: {fileID: 114058284047165556}
   - component: {fileID: 114990715921066076}
   - component: {fileID: 114522886324265304}
   - component: {fileID: 114710166951855862}
+  - component: {fileID: 114021137700524560}
   m_Layer: 0
   m_Name: Shork
   m_TagString: Untagged
@@ -33,6 +33,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1488241766617972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4238957288984306}
+  - component: {fileID: 114873349634193494}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4238957288984306
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488241766617972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.503, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4590883673737920}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4590883673737920
 Transform:
   m_ObjectHideFlags: 1
@@ -40,9 +69,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1261113472407596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -13.29, y: 1.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4238957288984306}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81,7 +111,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.13, y: 0}
   m_Size: {x: 2.2, y: 0.5}
   m_Direction: 1
---- !u!114 &114058284047165556
+--- !u!114 &114021137700524560
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,14 +119,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1261113472407596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce75e5cc21bf654aa077c061104ddf0, type: 3}
+  m_Script: {fileID: 11500000, guid: a2bb632abdbec194193e42dab35b88da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  health: 30
-  scoreFromKill: 100
-  colorParticlesKill: {r: 0.8207547, g: 0, b: 0.048668362, a: 1}
-  particleAmount: 75
+  distanceToAgro: 50
+  distanceToUnAgro: 100
+  isAgressive: 0
+  animalTypesAgressiveTo:
+  - Fish
 --- !u!114 &114522886324265304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,12 +138,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2933890f7e58fb5419f6a8f518eccea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthForInspector: 30
   animalType: Shork
   turn: 1
   turnSpeed: 1
   moveSpeed: 3
   rotateInDirection: 0
   desiredDirections: []
+  player: {fileID: 0}
+  scoreFromKill: 100
+  colorParticlesKill: {r: 0.8207547, g: 0, b: 0, a: 1}
+  particleAmount: 75
 --- !u!114 &114710166951855862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,9 +160,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17a7c57c089489a42958456836bc53c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToAgro: 10
-  distanceToUnagro: 20
+  distanceToAgro: 9
+  distanceToUnagro: 18
   isAgressive: 0
+--- !u!114 &114873349634193494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488241766617972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc42bd405e747ee46962caf02d8c6c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTarget: 0
+  damage: 0.1
+  range: 0.1
+  directionObject: {fileID: 4590883673737920}
 --- !u!114 &114990715921066076
 MonoBehaviour:
   m_ObjectHideFlags: 1

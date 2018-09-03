@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 212974153686479564}
   - component: {fileID: 50601726790613356}
   - component: {fileID: 70050315164347424}
-  - component: {fileID: 114349351491847976}
   - component: {fileID: 114630403637356922}
   - component: {fileID: 114515169946590208}
   - component: {fileID: 114179024032595576}
@@ -184,22 +183,6 @@ MonoBehaviour:
   scared: {fileID: 21300000, guid: 72f3785e724c0eb40a5c3a0b6db5070b, type: 3}
   asleep: {fileID: 21300000, guid: b9f200ae8bf90914aac9876d67d12570, type: 3}
   awake: {fileID: 21300000, guid: 7ac70a4ef2cebc648852b1c35d4b6c04, type: 3}
---- !u!114 &114349351491847976
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1395087760318664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ce75e5cc21bf654aa077c061104ddf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  health: 10
-  scoreFromKill: 25
-  colorParticlesKill: {r: 1, g: 0.2608753, b: 0, a: 1}
-  particleAmount: 50
 --- !u!114 &114515169946590208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,12 +208,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2933890f7e58fb5419f6a8f518eccea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthForInspector: 10
   animalType: Fatfish
   turn: 1
   turnSpeed: 0.75
   moveSpeed: 2.5
   rotateInDirection: 1
   desiredDirections: []
+  player: {fileID: 0}
+  scoreFromKill: 25
+  colorParticlesKill: {r: 1, g: 0.32661343, b: 0, a: 1}
+  particleAmount: 50
 --- !u!198 &198241670304048528
 ParticleSystem:
   m_ObjectHideFlags: 1

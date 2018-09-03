@@ -6,7 +6,16 @@ public class Animal : MonoBehaviour, IAnimalHealth {
 
     Rigidbody2D rb;
     
-    public float Health { get; set; }
+    public float Health {
+        get {
+            return healthForInspector;
+        }
+        set {
+            healthForInspector = value;
+        }
+    }
+
+    public float healthForInspector;
 
     static public Dictionary<string, List<Animal>> animalsByType;
 
@@ -21,7 +30,14 @@ public class Animal : MonoBehaviour, IAnimalHealth {
 
     public List<WeightedDirection> desiredDirections;
 
+
+    public GameObject player;
+    public float scoreFromKill;
+    public Color colorParticlesKill;
+    public int particleAmount = 50;
+
     void Start () {
+        player = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
 		if(animalsByType == null) {
             animalsByType = new Dictionary<string, List<Animal>>();
@@ -35,6 +51,9 @@ public class Animal : MonoBehaviour, IAnimalHealth {
     }
 
     void FixedUpdate() {
+        if(Health <= 0) {
+            Destroy(gameObject);
+        }
         desiredDirections = new List<WeightedDirection>();
 
         BroadcastMessage("CalculateWeightedDirection", SendMessageOptions.DontRequireReceiver);
@@ -70,6 +89,39 @@ public class Animal : MonoBehaviour, IAnimalHealth {
         rb.velocity = JMath.DegreeToVector2(angle) * moveSpeed;
 
         transform.rotation = Quaternion.AngleAxis(angle + 180, Vector3.forward);
+    }
+
+    void OnCollisionEnter2D(Collision2D col) {
+        if (col.collider == null || col.collider.sharedMaterial == null || col.collider.sharedMaterial.name != "Horn") return;
+        if (col.rigidbody.velocity.magnitude < 0) {
+            //Health += col.rigidbody.velocity.magnitude;
+            DealDamage(-col.rigidbody.velocity.magnitude, player.GetComponent<Player>().Particles);
+        } else {
+            //    Health -= col.rigidbody.velocity.magnitude;
+            DealDamage(col.rigidbody.velocity.magnitude, player.GetComponent<Player>().Particles);
+        }
+        //player.GetComponent<Player>().particles.startColor = colorParticlesKill;
+        //player.GetComponent<Player> ().particles.Emit (Mathf.RoundToInt (col.rigidbody.velocity.magnitude * 50));
+        //player.GetComponent<Player>().ParticleEmit(colorParticlesKill, Mathf.RoundToInt(col.rigidbody.velocity.magnitude * particleAmount));
+        if (Health <= 0) {
+            Destroy(gameObject);
+            col.gameObject.GetComponent<Player>().score += scoreFromKill;
+            //player.GetComponent<Player> ().particles.Emit (Mathf.RoundToInt (col.rigidbody.velocity.magnitude * 50));
+            //player.GetComponent<Player>().ParticleEmit(colorParticlesKill, Mathf.RoundToInt(col.rigidbody.velocity.magnitude * particleAmount));
+        }
+
+    }
+
+    public void DealDamage(float damage, ParticleSystem particles) {
+        Health -= damage;
+        ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams {
+            startColor = colorParticlesKill,
+            position = particles.transform.position,
+            applyShapeToPosition = true
+        };
+        Debug.Log(particles.name);
+        particles.Play();
+        particles.Emit(emitParams, Mathf.RoundToInt(damage * particleAmount));
     }
 
 
