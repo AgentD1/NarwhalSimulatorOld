@@ -199,6 +199,26 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9053716}
   m_CullTransparentMesh: 0
+--- !u!1 &16842918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 178354, guid: fdb23f93f1c410c42868938124f4cc8a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1640719445}
+--- !u!114 &16842920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 16842918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6496333137612348b448d669d0d73e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthForEditor: 5
+  scoreMultiplier: 1
+  playerParticleColor: {r: 0, g: 0, b: 0, a: 0}
+  breakTextures: []
 --- !u!1001 &17089311
 Prefab:
   m_ObjectHideFlags: 0
@@ -262,6 +282,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -345,6 +369,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -416,6 +444,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -644,6 +676,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -790,6 +826,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -939,6 +979,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -1125,6 +1169,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -1280,6 +1328,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -1362,6 +1414,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -1429,6 +1485,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -1495,6 +1555,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -1645,6 +1709,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -1829,6 +1897,11 @@ Prefab:
         type: 2}
       propertyPath: limit
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150043934390846, guid: 253a93cb9374dd8429c9d4b89f66d785,
+        type: 2}
+      propertyPath: healthForEditor
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 253a93cb9374dd8429c9d4b89f66d785, type: 2}
@@ -2110,6 +2183,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -2182,6 +2259,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -2253,6 +2334,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -2394,6 +2479,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -2546,6 +2635,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -2730,6 +2823,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -2796,6 +2893,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -2876,7 +2977,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 296843079}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 3.6}
   m_LocalScale: {x: 11, y: 1, z: 11}
   m_Children: []
   m_Father: {fileID: 626266955}
@@ -2951,6 +3052,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -3023,6 +3128,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -3089,6 +3198,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -3167,6 +3280,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -3233,6 +3350,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -3342,6 +3463,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -3413,6 +3538,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -3486,6 +3615,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -3552,6 +3685,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -3630,6 +3767,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -3696,6 +3837,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -3774,6 +3919,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -3840,6 +3989,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -3986,6 +4139,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -4134,6 +4291,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -4206,6 +4367,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -4272,6 +4437,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -4392,6 +4561,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -4458,6 +4631,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -4531,6 +4708,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -4603,6 +4784,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -4669,6 +4854,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -4742,6 +4931,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -4808,6 +5001,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -4946,6 +5143,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -5012,6 +5213,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -5084,6 +5289,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -5161,6 +5370,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -5278,6 +5491,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -5344,6 +5561,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -5417,6 +5638,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -5483,6 +5708,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -5551,6 +5780,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -5612,6 +5845,11 @@ Prefab:
         type: 2}
       propertyPath: limit
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150043934390846, guid: 253a93cb9374dd8429c9d4b89f66d785,
+        type: 2}
+      propertyPath: healthForEditor
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 253a93cb9374dd8429c9d4b89f66d785, type: 2}
@@ -5685,6 +5923,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -5751,6 +5993,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -5920,6 +6166,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -6104,6 +6354,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -6213,6 +6467,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -6290,6 +6548,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -6351,6 +6613,11 @@ Prefab:
         type: 2}
       propertyPath: spawnInterval
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150043934390846, guid: 253a93cb9374dd8429c9d4b89f66d785,
+        type: 2}
+      propertyPath: healthForEditor
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 253a93cb9374dd8429c9d4b89f66d785, type: 2}
@@ -6419,6 +6686,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -6486,6 +6757,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -6552,6 +6827,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -6801,6 +7080,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -6873,6 +7156,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -6940,6 +7227,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -7006,6 +7297,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -7079,6 +7374,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -7145,6 +7444,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -7218,6 +7521,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -7284,6 +7591,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -7356,6 +7667,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -7461,6 +7776,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -7703,6 +8022,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -7780,6 +8103,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -7851,6 +8178,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -8129,6 +8460,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -8284,6 +8619,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -8528,6 +8867,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -8599,6 +8942,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -8767,6 +9114,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -8951,6 +9302,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -9166,6 +9521,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -9232,6 +9591,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -9310,6 +9673,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -9376,6 +9743,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -9556,6 +9927,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -9622,6 +9997,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -9690,6 +10069,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -9756,6 +10139,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -10219,6 +10606,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -10295,6 +10686,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -10407,6 +10802,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -10478,6 +10877,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -10646,6 +11049,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -10717,6 +11124,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -10790,6 +11201,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -10857,6 +11272,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -10923,6 +11342,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -11011,6 +11434,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -11082,6 +11509,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -11159,6 +11590,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -11265,6 +11700,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -11538,6 +11977,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -11619,6 +12062,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -11807,6 +12254,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -11879,6 +12330,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -11945,6 +12400,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -12108,6 +12567,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -12180,6 +12643,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -12246,6 +12713,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -12348,6 +12819,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -12414,6 +12889,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -12616,6 +13095,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -12939,6 +13422,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -13160,6 +13647,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -13226,6 +13717,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -13294,6 +13789,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -13361,6 +13860,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -13427,6 +13930,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -13621,6 +14128,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -13687,6 +14198,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -13755,6 +14270,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -13821,6 +14340,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -14039,6 +14562,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -14111,6 +14638,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -14182,6 +14713,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -14325,6 +14860,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -14392,6 +14931,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -14458,6 +15001,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -14643,6 +15190,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -14710,7 +15261,8 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1661297125 stripped
@@ -14781,6 +15333,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -15006,6 +15562,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -15211,6 +15771,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -15287,6 +15851,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -15529,6 +16097,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -15843,6 +16415,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -15934,6 +16510,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -16090,6 +16670,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -16225,6 +16809,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -16431,6 +17019,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -16591,26 +17183,9 @@ Prefab:
       propertyPath: m_Name
       value: Ice (216)
       objectReference: {fileID: 0}
-    - target: {fileID: 50996148104934014, guid: fdb23f93f1c410c42868938124f4cc8a,
-        type: 2}
-      propertyPath: m_BodyType
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
-      propertyPath: playerParticleColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
-      propertyPath: playerParticleColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
-      propertyPath: playerParticleColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
-      propertyPath: playerParticleColor.r
-      value: 0.578
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -16683,6 +17258,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -16825,6 +17404,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -16891,6 +17474,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -16978,6 +17565,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -17092,6 +17683,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -17158,6 +17753,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -17312,6 +17911,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -17377,6 +17980,11 @@ Prefab:
         type: 2}
       propertyPath: playerParticleColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114961170033970218, guid: 3e5f9f5872337aa47b3221fc5f72a3ce,
+        type: 2}
+      propertyPath: healthForEditor
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e5f9f5872337aa47b3221fc5f72a3ce, type: 2}
@@ -17455,6 +18063,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -17532,6 +18144,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -17598,6 +18214,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -17666,6 +18286,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -17732,6 +18356,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -17884,6 +18512,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -17950,6 +18582,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -18087,6 +18723,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -18154,6 +18794,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -18220,6 +18864,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
@@ -18373,6 +19021,10 @@ Prefab:
       propertyPath: playerParticleColor.r
       value: 0.578
       objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
   m_IsPrefabAsset: 0
@@ -18508,6 +19160,10 @@ Prefab:
     - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
       propertyPath: playerParticleColor.r
       value: 0.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402436, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}
+      propertyPath: healthForEditor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb23f93f1c410c42868938124f4cc8a, type: 2}

@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class Block : MonoBehaviour, IBlockHealth {
+    public float healthForEditor;
     public float Health { get; set; }
     float originalHealth;
     public float scoreMultiplier = 1f;
@@ -9,8 +10,9 @@ public class Block : MonoBehaviour, IBlockHealth {
     public Sprite[] breakTextures;
 
     void Start() {
+        Health = healthForEditor;
         if (Health <= 0) {
-            Debug.LogError("Block health cannot be less than or equal to 0 on start! Setting to 1. ID: " + GetInstanceID());
+            Debug.LogError("Block health cannot be less than or equal to 0 on start! Setting to 1. ID: " + name);
             Health = 1;
         }
         originalHealth = Health;
