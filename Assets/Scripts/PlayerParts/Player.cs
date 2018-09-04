@@ -61,8 +61,6 @@ public class Player : MonoBehaviour, IAnimalHealth {
         sc.EquipItemToPlayer("Default Body");
 
         Debug.Log(bodyParts["Horn"].name);
-        //originalSpeed = movementSpeed;
-        //originalAcceleration = movementAcceleration;
     }
 
     // Update is called once per frame
@@ -80,28 +78,6 @@ public class Player : MonoBehaviour, IAnimalHealth {
         if (Input.GetKey(KeyCode.R)) {
             transform.position = Vector2.zero;
         }
-        /*
-        if (isCharging) {
-            if (charge > 0 && Input.GetKey(KeyCode.LeftShift)) {                                        // if charging
-                charge = Mathf.Clamp(charge - (Time.fixedDeltaTime * chargeUseRate), 0, chargeTime);
-                chargeSlider.value = charge / chargeTime;
-            } else {                                                                                    // if is not charging anymore
-                movementSpeed = originalSpeed;
-                movementAcceleration = originalAcceleration;
-                isCharging = false;
-            }
-        } else {
-            if (charge > chargeRegen && Input.GetKey(KeyCode.LeftShift)) {                              // if not charging but wants to charge
-                movementSpeed = originalSpeed * movementSpeedMultiplier;
-                movementAcceleration = originalAcceleration * movementAccelerationMultiplier;
-                isCharging = true;
-            } else {                                                                                    // if not charging
-                charge = Mathf.Clamp(charge + (Time.fixedDeltaTime * chargeRegen), 0, chargeTime);
-                chargeSlider.value = charge / chargeTime;   
-            }
-        }
-        
-        */
     }
 
 	public void ParticleEmit(Color color, int amountToEmit){
@@ -111,5 +87,5 @@ public class Player : MonoBehaviour, IAnimalHealth {
             applyShapeToPosition = true
         };
         Particles.Emit(emitParams, amountToEmit);
-	}
+    }
 }

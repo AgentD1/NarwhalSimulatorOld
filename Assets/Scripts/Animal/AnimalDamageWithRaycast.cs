@@ -22,16 +22,12 @@ public class AnimalDamageWithRaycast : MonoBehaviour {
                     hit.GetComponent<IAnimalHealth>().Health -= damage;
                     if (hit.GetComponent<Animal>()) {
                         hit.GetComponent<Animal>().DealDamage(damage, GetComponent<ParticleSystem>());
-                    } else {
-                        Debug.Log("Oh no");
                     }
                 } else {
                     if (hit.transform.parent.GetComponent<IAnimalHealth>() != null) {
                         hit.transform.parent.GetComponent<IAnimalHealth>().Health -= damage;
                         if (hit.GetComponent<Animal>()) {
                             hit.GetComponent<Animal>().DealDamage(damage, GetComponent<ParticleSystem>());
-                        } else {
-                            Debug.Log("Oh no");
                         }
                     }
                 }
@@ -40,6 +36,16 @@ public class AnimalDamageWithRaycast : MonoBehaviour {
                 if (hit.GetComponent<IBlockHealth>() != null) {
                     hit.GetComponent<IBlockHealth>().Health -= damage;
                 }
+            }
+            if (hit.transform.parent != null && hit.transform.parent.tag == "Player") {
+                ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams {
+                    startColor = new Color(1f, 0f, 0f),
+                    position = transform.position,
+                    applyShapeToPosition = true
+                };
+                GetComponent<ParticleSystem>().Emit(emitParams, Mathf.RoundToInt(damage * 20f));
+                //hit.transform.parent.GetComponent<Player>().ParticleEmit(new Color(1f, 0f, 0f), Mathf.RoundToInt(damage * 20f));
+                hit.transform.parent.GetComponent<Player>().Health -= damage;
             }
         }
 	}

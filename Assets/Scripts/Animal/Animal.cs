@@ -119,8 +119,6 @@ public class Animal : MonoBehaviour, IAnimalHealth {
             position = particles.transform.position,
             applyShapeToPosition = true
         };
-        Debug.Log(particles.name);
-        particles.Play();
         particles.Emit(emitParams, Mathf.RoundToInt(damage * particleAmount));
     }
 
