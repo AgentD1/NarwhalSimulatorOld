@@ -12,19 +12,23 @@ public class Controller : MonoBehaviour {
     public GameObject pauseMenuRoot;
     public Camera blurCamera;
     public GameObject ShopUI;
+    public Slider playerHealthSlider;
+    public Player player;
 
     private void Start() {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if (blurCamera == null) {
             blurCamera = Camera.main;
         }
     }
-    // TODO: Change this when I have a wifi connection into something like add listener for slider's on value changed function.
+
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             if (!ShopUI.activeSelf) {
                 TogglePauseState();
             }
         }
+        playerHealthSlider.value = player.Health / player.maxHealth;
         OnMusicVolumeChange();
     }
 
@@ -38,6 +42,7 @@ public class Controller : MonoBehaviour {
 
     public void ResetButtonPressed() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     public void ShopButtonPressed() {

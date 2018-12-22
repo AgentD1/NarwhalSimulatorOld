@@ -16,14 +16,14 @@ public abstract class BackFinTemplate : MonoBehaviour, IMovementSpeedModifiable,
 
 	public virtual void FixedUpdate () {
         if (Input.GetKey(KeyCode.W)) {
-            if (rb.velocity.x * rb.velocity.y < MovementSpeed) {
-                rb.AddRelativeForce(new Vector2(-MovementAcceleration, 0), 0);
-            }
+            rb.AddRelativeForce(new Vector2(-MovementAcceleration, 0), 0);
+            
+            rb.velocity = Vector2.ClampMagnitude(rb.velocity, MovementSpeed);
         }
         if (Input.GetKey(KeyCode.S)) {
-            if (rb.velocity.x * rb.velocity.y < MovementSpeed) {
-                rb.AddRelativeForce(new Vector2(MovementAcceleration / 2, 0));
-            }
+            rb.AddRelativeForce(new Vector2(MovementAcceleration/2, 0), 0);
+
+            rb.velocity = Vector2.ClampMagnitude(rb.velocity, MovementSpeed);
         }
 
         transform.Find("Default").GetComponent<Animator>().SetFloat("SwimSpeed", rb.velocity.magnitude);

@@ -7,7 +7,7 @@ public abstract class HornTemplate : MonoBehaviour, IDamageValue {
     public float Damage { get; set; }
 
     public virtual void Start() {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().particles = GetComponentInChildren<ParticleSystem>();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().Particles = GetComponentInChildren<ParticleSystem>();
     }
 
 }

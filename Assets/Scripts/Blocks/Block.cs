@@ -1,19 +1,21 @@
 using UnityEngine;
 using System.Collections;
 
-public class Block : MonoBehaviour {
-    public float health;
+public class Block : MonoBehaviour, IBlockHealth {
+    public float healthForEditor;
+    public float Health { get; set; }
     float originalHealth;
     public float scoreMultiplier = 1f;
     public Color playerParticleColor;
     public Sprite[] breakTextures;
 
     void Start() {
-        if (health <= 0) {
-            Debug.LogError("Block health cannot be less than or equal to 0 on start! Setting to 1. ID: " + GetInstanceID());
-            health = 1;
+        Health = healthForEditor;
+        if (Health <= 0) {
+            Debug.LogError("Block health cannot be less than or equal to 0 on start! Setting to 1. ID: " + name);
+            Health = 1;
         }
-        originalHealth = health;
+        originalHealth = Health;
     }
     public void OnCollisionEnter2D(Collision2D col) {
         if (col.collider == null || col.collider.sharedMaterial == null || col.collider.sharedMaterial.name != "Horn" || col.transform.GetComponent<Player>() == null) return;
@@ -28,16 +30,16 @@ public class Block : MonoBehaviour {
         }
 
         if (col.rigidbody.velocity.magnitude < 0) {
-            health += col.rigidbody.velocity.magnitude * hornDamageMultiplier;
+            Health += col.rigidbody.velocity.magnitude * hornDamageMultiplier;
         } else {
-            health -= col.rigidbody.velocity.magnitude * hornDamageMultiplier;
+            Health -= col.rigidbody.velocity.magnitude * hornDamageMultiplier;
         }
 
 
         col.transform.GetComponent<Player>().ParticleEmit(playerParticleColor, Mathf.RoundToInt(col.rigidbody.velocity.magnitude * 50));
 
 
-        if (health <= 0) {
+        if (Health <= 0) {
             Destroy(gameObject);
             col.gameObject.GetComponent<Player>().score += originalHealth * scoreMultiplier;
             return;
@@ -57,7 +59,7 @@ public class Block : MonoBehaviour {
         }
 
         for (int i = 0; i < breakTextures.GetLength(0); i++) {
-            if (1 - (health / originalHealth) <= ((originalHealth / breakTextures.GetLength(0)) / originalHealth) * i) {
+            if (1 - (Health / originalHealth) <= ((originalHealth / breakTextures.GetLength(0)) / originalHealth) * i) {
                 transform.Find("CracksDisplay").GetComponent<SpriteRenderer>().sprite = breakTextures[i];
                 break;
             }
