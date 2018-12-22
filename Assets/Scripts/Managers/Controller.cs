@@ -42,6 +42,7 @@ public class Controller : MonoBehaviour {
 
     public void ResetButtonPressed() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     public void ShopButtonPressed() {
