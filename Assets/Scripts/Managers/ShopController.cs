@@ -81,6 +81,7 @@ public class ShopController : MonoBehaviour {
             typeText.GetComponent<Text>().text = item.itemType;
             briefDescription.GetComponent<Text>().text = item.briefDescription;
             image.GetComponent<Image>().sprite = item.shopThumbnail;
+            image.GetComponent<Image>().color = item.color;
 
             if (FindObjectOfType<InventoryManager>().ownedItems.Contains(item.itemName)) {
                 purchaseButton.GetComponent<Button>().onClick.AddListener(delegate { OnEquipButtonClicked(item.itemName); });

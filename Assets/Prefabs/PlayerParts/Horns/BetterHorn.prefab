@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4170529788539586}
   - component: {fileID: 60864498330684066}
-  - component: {fileID: 114610783558182206}
+  - component: {fileID: 3410681225653688290}
   m_Layer: 0
   m_Name: BetterHorn
   m_TagString: Untagged
@@ -142,7 +142,7 @@ PolygonCollider2D:
       - {x: -1.7, y: -0.02}
       - {x: -1.7, y: -0.06}
       - {x: -1.06, y: -0.1}
---- !u!114 &114610783558182206
+--- !u!114 &3410681225653688290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,9 +151,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1459079955031484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce1777e46c455304ebc3647da9706926, type: 3}
+  m_Script: {fileID: 11500000, guid: ae00725109cfe414f99c84682fd3be43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &1499030759582070
 GameObject:
   m_ObjectHideFlags: 0

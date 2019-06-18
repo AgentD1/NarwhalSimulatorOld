@@ -11,6 +11,18 @@ public class AnimalRunFromAnimal : MonoBehaviour {
 
     public string[] animalTypesScaredOf;
 
+    List<Animal> animalsScaredOf = new List<Animal>();
+
+    public void Start() {
+        foreach (string type in animalTypesScaredOf) {
+            if (Animal.animalsByType.ContainsKey(type)) {
+                animalsScaredOf.AddRange(Animal.animalsByType[type]);
+            } else {
+                Debug.LogWarning(type + " not found in animals!");
+            }
+        }
+    }
+
     public void CalculateWeightedDirection() {
         if (isScared) {
             /*
@@ -43,16 +55,12 @@ public class AnimalRunFromAnimal : MonoBehaviour {
                 isScared = true;
             }
             */
-
-            List<Animal> animalsScaredOf = new List<Animal>();
-
-            foreach (string type in animalTypesScaredOf) {
-                animalsScaredOf.AddRange(Animal.animalsByType[type]);
-            }
-
             List<WeightedDirection> wds = new List<WeightedDirection>();
 
             foreach (Animal a in animalsScaredOf) {
+                if(a == null) {
+                    continue;
+                }
                 if (Vector2.Distance(a.transform.position, transform.position) < distanceToUnscare) {
                     isScared = true;
                     wds.Add(new WeightedDirection(transform.position - a.transform.position, 5f, WeightedDirectionType.DEFAULT));

@@ -37,7 +37,7 @@ public class AnimalDamageWithRaycast : MonoBehaviour {
                     hit.GetComponent<IBlockHealth>().Health -= damage;
                 }
             }
-            if (hit.transform.parent != null && hit.transform.parent.tag == "Player") {
+            if (hit.transform.parent != null && hit.transform.parent.tag == "Player" && hit.transform.parent.GetComponent<Player>().bodyParts["Horn"] != hit.gameObject) {
                 ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams {
                     startColor = new Color(1f, 0f, 0f),
                     position = transform.position,

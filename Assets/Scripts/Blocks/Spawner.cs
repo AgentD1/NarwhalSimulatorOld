@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour {
     private float spawncounter;
 
     public int limit;
+    public bool deleteFarAwayAnimalsWhenNeeded = true;
 
     List<GameObject> spawnedGameObjects = new List<GameObject>();
 
@@ -33,7 +34,7 @@ public class Spawner : MonoBehaviour {
             if (spawnedGameObjects.Count < limit) {
                 GameObject go = Instantiate(thingToSpawn, transform.position, Quaternion.identity);
                 spawnedGameObjects.Add(go);
-            } else {
+            } else if(deleteFarAwayAnimalsWhenNeeded) {
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
                 GameObject longest = spawnedGameObjects[0];
                 float longestDistance = 0;

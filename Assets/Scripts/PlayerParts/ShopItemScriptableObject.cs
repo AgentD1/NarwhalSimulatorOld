@@ -12,4 +12,5 @@ public class ShopItemScriptableObject : ScriptableObject {
     public GameObject prefab;
     public string itemType;
     public int cost;
+    public Color color;
 }
